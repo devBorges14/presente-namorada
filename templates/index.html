@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EU TE AMO, MINHA PRINCESA</title>
+    <style>
+        /* Estilização Geral */
+        body {
+            background-color: #fff5f7;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #4a4a4a;
+            line-height: 1.6;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Container do Conteúdo */
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 30px;
+            box-shadow: 0 15px 35px rgba(216, 27, 96, 0.1);
+            max-width: 650px;
+            width: 100%;
+            text-align: center;
+            border: 2px solid #fce4ec;
+        }
+
+        h1 {
+            color: #d81b60;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        /* Balões Apaixonados */
+        .balao {
+            background-color: #fff0f3;
+            border: 1px solid #ffccd5;
+            padding: 20px;
+            border-radius: 25px;
+            margin-bottom: 20px;
+            position: relative;
+            box-shadow: 2px 4px 10px rgba(0,0,0,0.03);
+            text-align: left;
+        }
+
+        .balao::after {
+            content: '❤';
+            position: absolute;
+            bottom: -15px;
+            right: 30px;
+            color: #ff8fa3;
+            font-size: 1.2rem;
+        }
+
+        /* Calendário Fofo */
+        .calendar-container {
+            margin: 30px auto;
+            max-width: 280px;
+            background: #fff;
+            border: 2px solid #ffb1c1;
+            border-radius: 15px;
+            overflow: hidden;
+            font-size: 0.9rem;
+        }
+
+        .calendar-header {
+            background: #ffb1c1;
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            padding: 10px;
+            background: #fff;
+        }
+
+        .day-name { font-weight: bold; color: #ff8fa3; padding-bottom: 5px; }
+
+        .day { padding: 8px 0; color: #777; }
+
+        .marked-day {
+            background-color: #ffebf0;
+            color: #d81b60;
+            font-weight: bold;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .marked-day::after {
+            content: '❤';
+            font-size: 8px;
+            position: absolute;
+            top: 2px;
+            right: 2px;
+        }
+
+        /* Foto e Links */
+        .foto-casal {
+            max-width: 90%;
+            height: auto;
+            border-radius: 20px;
+            margin-top: 20px;
+            border: 6px solid #fff;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .heart {
+            color: #e91e63;
+            font-size: 2.5rem;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.15); }
+            100% { transform: scale(1); }
+        }
+
+        .btn-enigma {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background-color: #d81b60;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-enigma:hover {
+            background-color: #ad1457;
+            transform: translateY(-2px);
+        }
+
+        .footer { margin-top: 20px; font-style: italic; color: #ff8fa3; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="heart">❤</div>
+        <h1>Para Minha Princesa</h1>
+
+        <!-- Balões de Mensagem -->
+        <div class="balao">
+            Bom dia, boa tarde ou boa noite, minha maior e única paixão.
+            Meu sonho realizado, futuro de amor, grande paz ao seu lado.
+        </div>
+
+        <div class="balao">
+            Este singelo presente é apenas um dos 7 presentes que você, meu amor, ganhará.
+            Cada presente com um enigma diferente, como todos enigmas finalizados você receberá o último presente.
+        </div>
+
+        <!-- Calendário Adicionado -->
+        <div class="calendar-container">
+            <div class="calendar-header">Maio 2026</div>
+            <div class="calendar-grid">
+                <div class="day-name">D</div><div class="day-name">S</div><div class="day-name">T</div><div class="day-name">Q</div><div class="day-name">Q</div><div class="day-name">S</div><div class="day-name">S</div>
+                <!-- Dias vazios para começar no dia correto de Maio -->
+                <div class="day"></div><div class="day"></div><div class="day"></div><div class="day"></div><div class="day">1</div><div class="day">2</div><div class="day">3</div>
+                <div class="day">4</div><div class="day">5</div><div class="day">6</div><div class="day">7</div><div class="day">8</div><div class="day">9</div><div class="day">10</div>
+                <div class="day marked-day">11</div><div class="day">12</div><div class="day">13</div><div class="day">14</div><div class="day">15</div><div class="day">16</div><div class="day">17</div>
+                <div class="day">18</div><div class="day">19</div><div class="day">20</div><div class="day">21</div><div class="day">22</div><div class="day">23</div><div class="day">24</div>
+                <div class="day">25</div><div class="day">26</div><div class="day">27</div><div class="day">28</div><div class="day">29</div><div class="day">30</div><div class="day">31</div>
+            </div>
+        </div>
+
+        <div class="balao">
+            Neste site amor quero me expressar com a minha princesa, te dizer o quanto você é perfeita, o quanto você é importante para mim. Estar contigo trás a felicidade, que só aumenta.
+        </div>
+
+        <div class="balao">
+            Sei que não sou bom com as palavras, mas carrego comigo a vontade de te fazer feliz. Peço encarecidamente um recomeço, afim de não acabar com este lindo começo.
+        </div>
+
+        <img src="static/casal.jpeg" alt="Nossa Foto" class="foto-casal">
+
+        <div class="footer">Com todo o meu amor, para sempre.</div>
+
+        <a href="/enigma1" class="btn-enigma">Seu primeiro enigma ➡</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINECRAFT ENIGMA</title>
+    <style>
+        /* Importando uma fonte pixelada para dar o estilo do jogo */
+        @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+        body {
+            background-color: #313233; /* Fundo escuro estilo pedra */
+            background-image:
+                linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url('https://www.transparenttextures.com/patterns/carbon-fibre.png'); /* Textura sutil */
+            font-family: 'VT323', monospace;
+            color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #c6c6c6; /* Cor cinza clássica dos menus do MC */
+            border: 4px solid #555;
+            border-top-color: #fff;
+            border-left-color: #fff;
+            padding: 30px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 10px 10px 0px rgba(0,0,0,0.5);
+            image-rendering: pixelated;
+        }
+
+        h1 {
+            color: #373737;
+            text-align: center;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            margin-top: 0;
+            text-shadow: 2px 2px 0px #fff;
+            background: #8b8b8b;
+            padding: 10px;
+            border: 3px solid #373737;
+        }
+
+        .content {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border: 3px solid #373737;
+            margin-top: 20px;
+            font-size: 1.4rem;
+            line-height: 1.4;
+        }
+
+        .highlight {
+            color: #55ff55; /* Cor de texto do chat do MC */
+        }
+
+        .item-list {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+        }
+
+        .item-list li::before {
+            content: "> ";
+            color: #ffff55;
+        }
+
+        .input-area {
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        input {
+            background: #000;
+            border: 3px solid #555;
+            color: #ffff55;
+            font-family: 'VT323', monospace;
+            font-size: 1.8rem;
+            padding: 10px;
+            width: 150px;
+            text-align: center;
+            outline: none;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto 0;
+            background: #4eae1e; /* Verde grama */
+            border: 4px solid #2d5a11;
+            border-top-color: #7bff5b;
+            border-left-color: #7bff5b;
+            color: white;
+            padding: 10px 30px;
+            font-family: 'VT323', monospace;
+            font-size: 1.6rem;
+            cursor: pointer;
+            text-shadow: 2px 2px 0px #2d5a11;
+        }
+
+        button:hover {
+            background: #5ccb25;
+        }
+
+        button:active {
+            border: 4px solid #7bff5b;
+            border-top-color: #2d5a11;
+            border-left-color: #2d5a11;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>O Enigma da Crafting Table</h1>
+
+    <div class="content">
+        <p>"Para encontrar o próximo passo do seu caminho, você precisa resolver o cálculo de um <span class="highlight">Artesão</span>.</p>
+
+        <p>Imagine que eu quero construir uma vila inteira para nós dois, e para isso preciso de <span class="highlight">64 tochas</span> e <span class="highlight">16 picaretas de ferro</span>.</p>
+
+        <p>No Minecraft:</p>
+        <ul class="item-list">
+            <li>1 Vara de Madeira + 1 Carvão = 4 Tochas</li>
+            <li>1 Picareta = 3 Barras de Ferro + 2 Gravetos</li>
+            <li>1 Tábua de Madeira = 4 Gravetos</li>
+        </ul>
+
+        <p>O Desafio:</p>
+        <p>Quantos <strong>Carvões</strong>, quantas <strong>Barras de Ferro</strong> e quantas <strong>Tábuas</strong> (no mínimo) preciso para os gravetos?</p>
+
+        <p style="color: #ff5555; text-align: center;">A senha é a soma desses três números.</p>
+    </div>
+
+    <div class="input-area">
+        <input type="text" placeholder="SENHA" id="senhaInput">
+        <button onclick="verificar()">DESBLOQUEAR</button>
+    </div>
+</div>
+
+<script>
+    function verificar() {
+        var senha = document.getElementById('senhaInput').value;
+        if(senha == "76") {
+            alert("✅ ACERTOU, MINHA PRINCESA! Redirecionando...");
+            window.location.href = "/enigma2"; // Mude para o link real
+        } else {
+            alert("❌ Vish! O cálculo deu errado. Tente minerar os números novamente!");
+        }
+    }
+</script>
+
+</body>
+</html>

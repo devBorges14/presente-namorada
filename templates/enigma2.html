@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESOLVIDO - ENIGMA 2</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .document-container {
+            background-color: #f4f1ea;
+            color: #2c2c2c;
+            padding: 40px;
+            max-width: 650px;
+            border-radius: 2px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5), inset 0 0 50px rgba(0,0,0,0.1);
+            position: relative;
+            border: 1px solid #dcd7c9;
+        }
+
+        /* Efeito de papel envelhecido */
+        .document-container::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(135deg, rgba(255,255,255,0.3) 0%, rgba(0,0,0,0.02) 100%);
+            pointer-events: none;
+        }
+
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+            letter-spacing: 5px;
+            color: #8b0000;
+            margin-bottom: 30px;
+        }
+
+        .stamp {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            border: 3px solid #8b0000;
+            color: #8b0000;
+            padding: 5px 10px;
+            font-weight: bold;
+            transform: rotate(15deg);
+            opacity: 0.7;
+            text-transform: uppercase;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.1rem;
+            text-align: justify;
+            margin-bottom: 25px;
+        }
+
+        .instruction-box {
+            background-color: #2c2c2c;
+            color: #00ff00;
+            padding: 20px;
+            border-radius: 5px;
+            font-family: 'Consolas', monospace;
+            margin-top: 40px;
+            border-left: 5px solid #8b0000;
+        }
+
+        .email-link {
+            color: #ffeb3b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .email-link:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="document-container">
+        <div class="stamp">Top Secret</div>
+        <h1>ENIGMA RESOLVIDO</h1>
+
+        <p>
+            <strong>1976 (MCMLXXVI)</strong> foi um ano bissexto do século XX que começou numa quinta-feira,
+            segundo o calendário gregoriano. As suas letras dominicais foram DC.
+            A terça-feira de Carnaval ocorreu a 2 de março e o domingo de Páscoa a 18 de abril.
+            Segundo o horóscopo chinês, foi o ano do <strong>Dragão</strong>, começando a 31 de janeiro.
+        </p>
+
+        <div class="instruction-box">
+            > SISTEMA: ACESSO AO SEGUNDO PRESENTE LIBERADO.<br><br>
+            > MISSÃO: Envie uma foto/print da Wikipedia sobre os acontecimentos de 1976 para o comando central.<br><br>
+            > DESTINATÁRIO: <a href="mailto:borges.11.g@gmail.com" class="email-link">borges.11.g@gmail.com</a>
+        </div>
+
+        <div class="footer">
+            Protocolo de Segurança: 11-05-2026 | Fim da Transmissão.
+        </div>
+    </div>
+
+</body>
+</html>
